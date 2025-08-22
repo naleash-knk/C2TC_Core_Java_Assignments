@@ -38,8 +38,5 @@ public class TicketBooking {
 		return noOfSeats;
 	}
 	
-	public void makePayment(double amount) {
-		
-	}
 
 }

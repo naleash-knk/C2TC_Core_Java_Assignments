@@ -12,18 +12,6 @@ public class CreditCardPayment extends Payment {
         this.ccv = ccv;
     }
 
-    public void setCardHolderName(String cardHolderName) {
-        this.cardHolderName = cardHolderName;
-    }
-
-    public void setCardType(String cardType) {
-        this.cardType = cardType;
-    }
-
-    public void setCCV(String ccv) {
-        this.ccv = ccv;
-    }
-
     public String getCardHolderName() {
         return cardHolderName;
     }
