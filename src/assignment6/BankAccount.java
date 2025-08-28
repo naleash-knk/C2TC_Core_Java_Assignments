@@ -11,7 +11,7 @@ public class BankAccount {
 	
 	public void deposit(double amount) throws InvalidAmountException {
 		if(amount<=0) {
-			throw new InvalidAmountException("Enter Proper Amount Value");
+			throw new InvalidAmountException("Error: Enter Proper Amount Value");
 		}
 		this.balance+=amount;
 		System.out.println("Amount: Rs."+amount+"/- is deposited in your account");
@@ -20,7 +20,7 @@ public class BankAccount {
 	
 	public void withdrawal(double amount) throws InsufficientFundsException {
 		if(amount>balance) {
-			throw new InsufficientFundsException("No Enough Balance");
+			throw new InsufficientFundsException("Error: No Enough Balance \n Current Balance: Rs."+this.balance+"/-");
 		}
 		this.balance-=amount;
 		System.out.println("Amount: Rs."+amount+"/- is Withdrawn from your account");
